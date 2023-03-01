@@ -28,10 +28,16 @@ li {
 
 /* ********** HEADER ********** */
 header {
-    height: var(--ms_header-height);
     width: 100%;
+    height: var(--ms_header-height);
     /* debug */
     background-color: aquamarine;
+}
+
+.input-group > .form-control,
+.input-group-text {
+    background-color: #e5e5e5;
+    border: none;
 }
 
 /* ********** MAIN ********** */
@@ -48,19 +54,14 @@ header {
     width: var(--ms_sidebar-width);
     height: 100%;
     color: white;
-    /* debug */
-    background-color: cornflowerblue;
+    background-image: url(../img/sidebar-bg.png);
+    background-size: cover;
+    background-color: #051e34;
 }
 
 .ms_sidebar a {
     text-decoration: none;
     color: inherit;
-}
-
-.ms_side-nav,
-.settings {
-    /* debug */
-    background-color: coral;
 }
 
 /* * Desktop layout * */
