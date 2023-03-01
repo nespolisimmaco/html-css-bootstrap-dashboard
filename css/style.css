@@ -1,4 +1,62 @@
-/* RESET */
+/* ********** VARIABLED ********** */
+:root {
+    --ms_header-height: 80px;
+    --ms_sidebar-width: 70px;
+}
+
+/* ********** RESET ********** */
 img {
     max-width: 100%;
+}
+
+/* ********** GENERAL ********** */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    /* debug */
+    background-color: brown;
+}
+
+/* ********** HEADER ********** */
+header {
+    height: var(--ms_header-height);
+    width: 100%;
+    /* debug */
+    background-color: aquamarine;
+}
+
+/* ********** MAIN ********** */
+/* ---------- Content with sidebar and main-content ---------- */
+.content {
+    width: 100%;
+    height: calc(100% - var(--ms_header-height));
+    /* debug */
+    background-color:burlywood;
+}
+
+/* ---------- Sidebar ---------- */
+.ms_sidebar {
+    width: var(--ms_sidebar-width);
+    height: 100%;
+    /* debug */
+    background-color: cornflowerblue;
+}
+
+/* * Desktop layout * */
+@media screen and (min-width: 992px) {
+    :root {
+        --ms_sidebar-width: 120px;
+    }
+}
+
+/* ---------- Main content ---------- */
+.main-content {
+    width: calc(100% - var(--ms_sidebar-width));
+    height: 100%;
+    /* debug */
+    background-color: cadetblue;
 }
