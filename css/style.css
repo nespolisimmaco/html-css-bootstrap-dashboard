@@ -21,6 +21,10 @@ body {
     background-color: brown;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* ********** HEADER ********** */
 header {
     height: var(--ms_header-height);
@@ -42,8 +46,20 @@ header {
 .ms_sidebar {
     width: var(--ms_sidebar-width);
     height: 100%;
+    color: white;
     /* debug */
     background-color: cornflowerblue;
+}
+
+.ms_sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ms_side-nav,
+.settings {
+    /* debug */
+    background-color: coral;
 }
 
 /* * Desktop layout * */
