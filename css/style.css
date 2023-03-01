@@ -43,7 +43,7 @@ header {
     background-color:burlywood;
 }
 
-/* ---------- Sidebar ---------- */
+/* ----------* Sidebar *---------- */
 .ms_sidebar {
     width: var(--ms_sidebar-width);
     height: 100%;
@@ -70,10 +70,11 @@ header {
     }
 }
 
-/* ---------- Main content ---------- */
+/* ----------* Main content *---------- */
 .main-content {
     width: calc(100% - var(--ms_sidebar-width));
     height: 100%;
+    overflow: auto;
     /* debug */
     background-color: cadetblue;
 }
@@ -94,3 +95,29 @@ header {
     background-color: darkseagreen;
     border: 1px dashed black;
 }
+
+/* ---------- Cards ---------- */
+/* ----- debug ----- */
+.ms_col {
+    /* debug */
+    background-color: darkorchid;
+    border: 1px solid black;
+    min-height: 500px;
+}
+
+.next-classes,
+.active-users {
+    /* debug */
+    background-color: lightskyblue;
+    min-height: 300px;
+    border: 1px dashed black;
+}
+
+.faq,
+.todo {
+    /* debug */
+    background-color: lightskyblue;
+    min-height: 150px;
+    border: 1px dashed black;
+}
+/* ----- end debug ----- */
