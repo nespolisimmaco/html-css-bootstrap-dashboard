@@ -122,3 +122,13 @@ header {
     border: 1px dashed black;
 }
 /* ----- end debug ----- */
+
+/* wider column */
+#name-column {
+    width: 40%;
+}
+
+/* Process badge */
+#process {
+    background-color: #ffc107;
+}
