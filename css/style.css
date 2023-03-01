@@ -2,6 +2,7 @@
 :root {
     --ms_header-height: 80px;
     --ms_sidebar-width: 70px;
+    --ms_inner-nav: #1b72e8;
 }
 
 /* ********** RESET ********** */
@@ -75,4 +76,21 @@ header {
     height: 100%;
     /* debug */
     background-color: cadetblue;
+}
+
+/* ---------- Inner nav ---------- */
+.ms_inner-nav {
+    background-color: var(--ms_inner-nav);
+    color: white;
+    /* debug */
+    width: 100%;
+}
+
+.new-student,
+.apps,
+.students-count {
+    /* debug */
+    min-height: 80px;
+    background-color: darkseagreen;
+    border: 1px dashed black;
 }
