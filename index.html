@@ -20,8 +20,46 @@
     <!-- Wrapper -->
     <div class="wrapper">
         <!-- Header -->
-        <header>
-            
+        <header class="ms_header d-flex align-items-center">
+            <!-- Container -->
+            <div class="container-fluid">
+                <!-- Row -->
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="logo col-auto d-flex align-items-center">
+                        <a href="#">
+                            <img class="small-logo d-lg-none" src="img/mobile-logo.png" alt="Boolean logo small">
+                            <img class="big-logo d-none d-lg-inline-block" src="img/logo.svg" alt="Boolean logo big">
+                        </a>
+                    </div>
+                    <!-- Search bar -->
+                    <div class="search-bar col d-flex align-items-center">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-body-secondary border-0" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="search" class="form-control border-0 bg-body-secondary ps-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <!-- Icons -->
+                    <div class="header-icons col-auto d-flex align-items-center">
+                        <ul class="d-flex ps-0 mb-0">
+                            <li class="d-none d-lg-block">
+                                <button class="btn border-0"><i class="fa-solid fa-list text-dark-emphasis"></i></button>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <button class="btn border-0"><i class="fa-solid fa-circle-question text-dark-emphasis"></i></button>
+                            </li>
+                            <li class="d-none d-lg-block">
+                                <button class="btn border-0"><i class="fa-solid fa-ellipsis-vertical text-dark-emphasis"></i></button>
+                            </li>
+                            <li>
+                                <button class="btn border-0"><i id="bell" class="fa-solid fa-bell"></i></button>               
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Container -->
         </header>
         <!-- End Header -->
 

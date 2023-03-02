@@ -1,6 +1,6 @@
 /* ********** VARIABLED ********** */
 :root {
-    --ms_header-height: 80px;
+    --ms_header-height: 60px;
     --ms_sidebar-width: 70px;
     --ms_inner-nav: #1b72e8;
 }
@@ -25,17 +25,22 @@ li {
 }
 
 /* ********** HEADER ********** */
-header {
+.ms_header {
     width: 100%;
     height: var(--ms_header-height);
-    /* debug */
-    background-color: aquamarine;
+    background-color: white;
 }
 
-.input-group > .form-control,
-.input-group-text {
-    background-color: #e5e5e5;
-    border: none;
+.small-logo {
+    width: 50px;
+}
+
+.big-logo {
+    height: 30px;
+}
+
+#bell {
+    color: orange;
 }
 
 /* ********** MAIN ********** */
