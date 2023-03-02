@@ -89,7 +89,6 @@ header {
 .main-content {
     width: calc(100% - var(--ms_sidebar-width));
     height: 100%;
-    overflow: auto;
     /* debug */
     background-color: cadetblue;
 }
@@ -137,9 +136,14 @@ header {
 }
 /* ----- end debug ----- */
 
+/* Next classes section */
 /* wider column */
 #name-column {
     width: 40%;
+}
+
+.table img {
+    width: 35px;
 }
 
 /* Process badge */
