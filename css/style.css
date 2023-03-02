@@ -18,8 +18,6 @@ body {
 .wrapper {
     height: 100vh;
     width: 100%;
-    /* debug */
-    background-color: brown;
 }
 
 li {
@@ -45,8 +43,6 @@ header {
 .content {
     width: 100%;
     height: calc(100% - var(--ms_header-height));
-    /* debug */
-    background-color:burlywood;
 }
 
 /* ----------* Sidebar *---------- */
@@ -89,8 +85,6 @@ header {
 .main-content {
     width: calc(100% - var(--ms_sidebar-width));
     height: 100%;
-    /* debug */
-    background-color: cadetblue;
 }
 
 /* ---------- Inner nav ---------- */
@@ -111,31 +105,6 @@ header {
 }
 
 /* ---------- Cards ---------- */
-/* ----- debug ----- */
-.ms_col {
-    /* debug */
-    background-color: darkorchid;
-    border: 1px solid black;
-    min-height: 500px;
-}
-
-.next-classes,
-.active-users {
-    /* debug */
-    background-color: lightskyblue;
-    min-height: 300px;
-    border: 1px dashed black;
-}
-
-.faq,
-.todo {
-    /* debug */
-    background-color: lightskyblue;
-    min-height: 150px;
-    border: 1px dashed black;
-}
-/* ----- end debug ----- */
-
 /* Next classes section */
 /* wider column */
 #name-column {
