@@ -34,10 +34,12 @@
                     </div>
                     <!-- Search bar -->
                     <div class="search-bar col d-flex align-items-center">
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-body-secondary border-0" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="search" class="form-control border-0 bg-body-secondary ps-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
-                        </div>
+                        <form class="container-fluid">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text bg-body-secondary border-0" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="search" class="form-control border-0 bg-body-secondary ps-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
+                            </div>
+                        </form>
                     </div>
                     <!-- Icons -->
                     <div class="header-icons col-auto d-flex align-items-center">
@@ -111,7 +113,91 @@
                             <!-- New student -->
                             <div class="new-student mb-2 col-sm-4 col-lg-2 order-sm-3">
                                 <span>Nuovo studente</span>
-                                <button type="button" class="btn btn-outline-light ms-2"><i class="fa-solid fa-plus"></i></button>
+                                <!-- Button to enable offcanvas -->
+                                <button type="button" class="btn btn-outline-light ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <!-- Offcanvas to add a new student -->
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <!-- Form to add a new student -->
+                                        <div class="container-fluid">
+                                            <form class="row g-3">
+                                                <!-- First name -->
+                                                <div class="col-md-6">
+                                                    <label for="inputFirstName" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="inputFirstName">
+                                                </div>
+                                                <!-- Last Name -->
+                                                <div class="col-md-6">
+                                                    <label for="inputLastName" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="inputLastName">
+                                                </div>
+                                                <!-- Mail -->
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail" class="form-label">Email</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+                                                    </div>
+                                                </div>
+                                                <!-- Password -->
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <!-- Address -->
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="inputAddress" placeholder="Via Nazionale, 10">
+                                                </div>
+                                                <!-- City -->
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" id="inputCity" placeholder="Milano">
+                                                </div>
+                                                <!-- State -->
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">Stato</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Scegli</option>
+                                                        <option>Italia</option>
+                                                    </select>
+                                                </div>
+                                                <!-- Zip -->
+                                                <div class="col-md-2">
+                                                    <label for="inputZip" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                                <!-- Choose file -->
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                  </div>
+                                                <!-- Check -->
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Seleziona per proseguire
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- Save and Empty buttons -->
+                                                <div class="col-12">
+                                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                                  <button type="button" class="btn btn-warning">Svuota</button>
+                                                </div> 
+                                            </form> 
+                                        </div>
+                                        <!-- End Form to add a new student -->
+                                    </div>
+                                </div>
+                                <!-- End Offcanvas to add a new student -->
                             </div>
                             <!-- Boolean apps -->
                             <div class="apps mb-2 col-sm-4 col-lg-6 order-sm-1">

@@ -1,4 +1,4 @@
-/* ********** VARIABLED ********** */
+/* ********** VARIABLES ********** */
 :root {
     --ms_header-height: 60px;
     --ms_sidebar-width: 70px;
@@ -110,6 +110,14 @@ li {
 
 .ms_inner-nav .badge:hover {
     box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.3);
+}
+
+/* Offcanvas */
+/* * Desktop layout * */
+@media screen and (min-width: 992px) {
+    .offcanvas.offcanvas-end {
+        width: 40%;
+    } 
 }
 
 /* ---------- Cards ---------- */
